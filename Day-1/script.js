@@ -95,3 +95,14 @@ for(let i = 0; i<=num; i++){
 }
 console.log(sum)
 */
+
+/*Question-7 Print Squares of Numbers from 1 to N
+
+Input: 5
+Output: 1 4 9 16 25
+*/
+
+const num = 10;
+for(let i = 0; i<=num; i++){
+    console.log(i ** 2)
+}
