@@ -59,7 +59,22 @@ for(let i = 1; i<=num; i++){
 console.log(sum)
 */
 
+/* Apporach-2 optimize solution
 const num = 1000000000
 let sum = num * (num + 1) / 2;
 console.log(sum)
+*/
 
+/*
+Product (Factorial) of N
+
+Input: 5
+Output: 120
+*/
+
+const num = 5;
+let factorial = 1;
+for(let i = 1; i<=num; i++){
+    factorial *= i
+}
+console.log(factorial)
