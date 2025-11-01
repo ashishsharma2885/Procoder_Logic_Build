@@ -50,9 +50,16 @@ Output: 15
 
 // using 2 apporach
 
+/* Apporach - 1
 const num = 10;
 let sum = 0;
 for(let i = 1; i<=num; i++){
     sum += i;
 }
 console.log(sum)
+*/
+
+const num = 1000000000
+let sum = num * (num + 1) / 2;
+console.log(sum)
+
