@@ -31,7 +31,7 @@ for(let i=0; i<=num; i++){
 
 Input: 10
 Output: 2 4 6 8 10
-✨ Introduces conditional checks inside loops. */
+✨ Introduces conditional checks inside loops. 
 
 const num = 10;
 for(let i = 0; i<=num; i++){
@@ -39,4 +39,20 @@ for(let i = 0; i<=num; i++){
          console.log(i)
     }
 }
+*/
 
+
+/*Question-4 Sum of First N Natural Numbers
+
+Input: 5
+Output: 15
+*/
+
+// using 2 apporach
+
+const num = 10;
+let sum = 0;
+for(let i = 1; i<=num; i++){
+    sum += i;
+}
+console.log(sum)
