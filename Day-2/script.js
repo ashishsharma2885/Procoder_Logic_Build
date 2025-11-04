@@ -84,6 +84,7 @@ function checkVowel(char) {
 console.log(checkVowel("A"));
 */
 
+/* Apporach-2
 function checkVowel(char = '0'){
     if('aeiou'.includes(char.toLowerCase()) && char !== ''){
         return "Vowel"
@@ -93,3 +94,22 @@ function checkVowel(char = '0'){
     return "Not a valid alphabet"
 }
 console.log(checkVowel("A"))
+*/
+
+/* Question- 5 Check if a Year is a Leap Year
+
+Input: 2024
+Output: Leap Year
+*/
+
+function isLeapYear(year){
+    if(year % 400 === 0){
+        return true
+    } else if (year % 100 === 0){
+        return false
+    } else if(year % 4 === 0) {
+        return true
+    }
+    return false
+}
+console.log(isLeapYear(1900))
