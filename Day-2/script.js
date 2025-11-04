@@ -24,6 +24,7 @@ console.log(maxOfThree(6, 6, 5))
 Input: -9
 Output: Negative */
 
+/*
 function positiveOrNegative(num){
     if(num > 0){
         return "Positive"
@@ -33,3 +34,26 @@ function positiveOrNegative(num){
     return "Zero"
 }
 console.log(positiveOrNegative(-6))
+*/
+
+/* Question-3 Calculate Electricity Bill
+Input: Units = 230
+
+Output: Total Bill = ₹1500
+*/
+
+ function calculateElectricityBill(unit){
+    let total = 0
+  if(unit <= 100){
+    total = unit * 5
+  } else if(unit <= 200){
+    total = (100 * 5) + (unit - 100) * 7
+  } else if(unit <= 300){
+      total = (100 * 5) + (100 * 7) + (unit - 200) * 10
+  } else {
+     total = (100 * 5) + (100 * 7) + (100 * 10) (unit - 300) * 12
+  }
+  return total;
+}
+
+console.log(calculateElectricityBill(230))
