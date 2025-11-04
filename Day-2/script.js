@@ -42,6 +42,7 @@ Input: Units = 230
 Output: Total Bill = ₹1500
 */
 
+/*
  function calculateElectricityBill(unit){
     let total = 0
   if(unit <= 100){
@@ -57,3 +58,38 @@ Output: Total Bill = ₹1500
 }
 
 console.log(calculateElectricityBill(230))
+*/
+
+/* Question-4 Check if a Character is a Vowel or Consonant
+
+Input: e
+Output: Vowel
+*/
+
+/* apporach -1
+function checkVowel(char) {
+  const charLowercase = char.toLowerCase();
+  if (
+    charLowercase === "a" ||
+    charLowercase === "e" ||
+    charLowercase === "i" ||
+    charLowercase === "o" ||
+    charLowercase === "u"
+  ) {
+    return "Vowel";
+  } else {
+    return "Consonant";
+  }
+}
+console.log(checkVowel("A"));
+*/
+
+function checkVowel(char = '0'){
+    if('aeiou'.includes(char.toLowerCase()) && char !== ''){
+        return "Vowel"
+    } else if (/[a-z]/.test(char.toLowerCase())) {
+        return "Constant"
+    }
+    return "Not a valid alphabet"
+}
+console.log(checkVowel("A"))
